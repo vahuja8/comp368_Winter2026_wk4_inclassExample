@@ -13,13 +13,17 @@ public class StudentDao {
 	public int registerStudent(Student student) throws ClassNotFoundException {
 
 		// create SQL statement
-		String INSERT_USERS_SQL = " INSERT INTO student" + " ( id, first_name, last_name,  grade) VALUES "
+		String INSERT_USERS_SQL = " INSERT INTO student2" + " ( id, first_name, last_name,  grade) VALUES "
 				+ "(?, ? ,?, ?);";
 		int result = 0;
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/week6", "root",
-				"class123")) {
+	//	try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/week6", "root",
+	//			"class123"))
+		try (Connection connection = DriverManager.getConnection("jdbc:mysql://10.201.22.56:3306/week6", "root",
+				"class123"))
+		
+		{
 			
 			//  for linux --- modify this as : try (Connection connection = DriverManager.getConnection("jdbc:mysql://10.111.33.244:3306/week6", "root",
 		//"class123")) {

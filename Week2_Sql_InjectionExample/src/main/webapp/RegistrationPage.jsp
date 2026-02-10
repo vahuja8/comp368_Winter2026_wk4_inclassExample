@@ -34,5 +34,14 @@ content="default-src 'none'; img-src *">
 		</form>
 	</div>
 
+
+
+
+
+
+
+	
+	
+
 </body>
 </html>
